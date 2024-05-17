@@ -168,6 +168,11 @@ nav {
 }
 /*Responsive side bar*/
 @media (max-width: 600px) {
+     nav {
+     margin-left: 1.5rem;
+     margin-right: 1.5rem;
+     }
+
     .nav-links {
       flex-direction: column;
       align-items: flex-start;
