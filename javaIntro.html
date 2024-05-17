@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeCraft</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://toppng.com/uploads/preview/decoding-aws-cognito-jwt-in-rails-11563986211fs4ia3uat8.png"
+                    alt="ACME"><!--change logo-->
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav1b"> Home</a>
+                <a href="#about" class="nav2b">About</a>
+                <a href="#contact" class="nav3b">Contact</a>
+                <button class="openbtn" onclick="openside()">☰</button>
+            </div>
+            <div class="sidebar" id="sidebar">
+                <!--Java Introdution-->
+                <button class="closebtn" onclick="closeside()">✕ Close</button>
+                <a href="javaIntro.html" class="active" onclick="togglePanel('panel1')">Java Introduction</a>
+                <!--Java Sntax-->
+                <a href="javaSyntax.html" onclick="togglePanel('panel2')">Java Syntax</a>
+                <!--Variables and Data types-->
+                <a href="variableData.html" onclick="togglePanel('panel3')">Variables and data types</a>
+                <!--Operators-->
+                <a href="operator.html" onclick="togglePanel('panel4')">Operators</a>
+                <!--ControlFlow-->
+                <a href="controlFlow.html" onclick="togglePanel('panel6')">ControlFlow</a>
+                <!--Arrays-->
+                <a href="array.html" onclick="togglePanel('panel7')">Arrays</a>
+                <!--Classes and Objects-->
+                <a href="classObj.html" onclick="togglePanel('panel9')">Classes and objects</a>
+                <!--Methods-->
+                <a href="method.html" onclick="togglePanel('panel8')">Methods</a>
+                <!--Input & Output-->
+                <a href="inputOutput.html" onclick="togglePanel('panel10')">Input & Output</a>
+                <!--polymorphysim-->
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro" id="intro" >
+            <div class="container1"  id="Java">
+                <div class="W?-java">
+                    <h1 id="History">What is Java?</h1>
+                    <p>One popular programming language for creating web applications is Java. With millions of Java
+                        programs in use today, it has been a preferred option for developers for more than 20 years.
+                        Java is a network-centric, object-oriented, multi-platform language that may function as a
+                        platform unto itself. It is an incredibly fast, safe, and dependable programming language that
+                        can be used to code anything from server-side technologies and big data applications to
+                        enterprise software and mobile apps.</p>
+                </div>
+                <div class="History-java" id="History">
+                    <h1>History of Java</h1>
+                    <p>Java was created by James Gosling and his team at Sun Microsystems in the early 1990s. The
+                        project was originally called "Oak" but was later renamed "Java" due to trademark issues.
+
+                        Public Announcement (1995): Java was publicly announced by Sun Microsystems in May 1995. It was
+                        touted as a revolutionary programming language that could run on any device, regardless of its
+                        architecture, through the use of the Java Virtual Machine (JVM)</p>
+                </div>
+                <div class="key-fea-java">
+                    <h1>Key features of Java</h1>
+                    <p> <span class="font-weight-span">• Object-oriented:</span> Java is an object-oriented programming
+                        language, which means that it focuses on objects and classes.</p>
+                    <P> <span class="font-weight-span">• Platform-independent:</span> Java programs can run on any
+                        device that has a JVM, making them highly portable.</p>
+                    <p> <span class="font-weight-span">• Simple and easy to learn:</span> Java was designed to be simple
+                        and easy to use, making it accessible to beginners.</p>
+                    <p> <span class="font-weight-span">• Robust and secure:</span> Java has built-in features for error
+                        handling and security, making it a reliable choice for building secure applications.</p>
+                    <p> <span class="font-weight-span">• Multi-threaded:</span> Java supports multi-threading, allowing
+                        programs to perform multiple tasks simultaneously.</p>
+                    <p> <span class="font-weight-span">• Architecture-neutral:</span> Java's architecture-neutral design
+                        allows it to be easily adapted to different computing platforms.</p>
+                </div>
+                <div class="StartBtn-Support">
+                    <a href="javaSyntax.html" class="startBtn">Next Lessons <span style="font-weight: 700;">></span></a>
+                </div>
+        </section>
+    </main>
+    <footer id="about">
+        <div class="footer-container1">
+            <div class="footer-wrap">
+                <div class="footer-support-wrap">
+                    <!--Fix the hyperlink-->
+                    <div class="footer-box3">
+                        <div class="footer-container2">
+                            <h1>Reference</h1>
+                            <a href="https://www.example.com">W3schools</a>
+                            <a href="https://www.example.com">Codecademy</a>
+                            <a href="https://www.example.com">Orale</a>
+                        </div>
+                    </div>
+                    <div class="footer-box3">
+                        <div class="footer-container2">
+                            <h1>About</h1>
+                            <a href="https://www.example.com">School</a>
+                            <a href="https://www.example.com">Researchers</a>
+                            <a href="https://www.example.com">point</a>
+                        </div>
+                    </div>
+                    <div class="footer-box3">
+                        <div class="footer-container2">
+                            <h1>Contact</h1>
+                            <a href="https://www.example.com">Email</a>
+                            <p>Add: to-be inputted </p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>    

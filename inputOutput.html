@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeCraft</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://toppng.com/uploads/preview/decoding-aws-cognito-jwt-in-rails-11563986211fs4ia3uat8.png"
+                    alt="ACME"><!--change logo-->
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav1b"> Home</a>
+                <a href="#about" class="nav2b">About</a>
+                <a href="#contact" class="nav3b">Contact</a>
+                <button class="openbtn" onclick="openside()">☰</button>
+            </div>
+            <div class="sidebar" id="sidebar">
+                <!--Java Introdution-->
+                <button class="closebtn" onclick="closeside()">✕ Close</button>
+                <a href="javaIntro.html" class="active" onclick="togglePanel('panel1')">Java Introduction</a>
+                <!--Java Sntax-->
+                <a href="javaSyntax.html" onclick="togglePanel('panel2')">Java Syntax</a>
+                <!--Variables and Data types-->
+                <a href="variableData.html" onclick="togglePanel('panel3')">Variables and data types</a>
+                <!--Operators-->
+                <a href="operator.html" onclick="togglePanel('panel4')">Operators</a>
+                <!--ControlFlow-->
+                <a href="controlFlow.html" onclick="togglePanel('panel6')">ControlFlow</a>
+                <!--Arrays-->
+                <a href="array.html" onclick="togglePanel('panel7')">Arrays</a>
+                <!--Classes and Objects-->
+                <a href="classObj.html" onclick="togglePanel('panel9')">Classes and objects</a>
+                <!--Methods-->
+                <a href="method.html" onclick="togglePanel('panel8')">Methods</a>
+                <!--Input & Output-->
+                <a href="inputOutput.html" onclick="togglePanel('panel10')">Input & Output</a>
+                <!--polymorphysim-->
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!--Input and output-->
+        <section class="Input" id="Input">
+            <div class="container2">
+                <div class="Input">
+                    <h1>Input and Output</h1>
+                    
+                    <!--Reading user input using Scanner-->
+                    <h2>Reading User Input Using Scanner</h2>
+                    <p>To scan the user input you must need to import the utility needed. how? simple.</p>
+                    <div class="container">
+                        <pre>
+import java.util.Scanner;
+                        </pre>
+                    </div>
+                    <p>Explanation: In Java, you can use the `Scanner` class to read input from the user. First, you need to create a `Scanner` object and then use its methods to read different types of input.</p>
+                    <p>Example: </p>
+                    <div class="container">
+                        <div class="container">
+                            <div id="snippet28">
+                                <div id="snippetjava">
+                                    <pre style="font-size: 11px;">
+import java.util.Scanner;
+        
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter your name: ");
+        String name = scanner.nextLine();
+        System.out.println("Hello, " + name + "!");
+    }
+}
+</pre>
+                                </div>
+                            </div>
+                            <button class="copy-button" onclick="copyToClipboard('snippet28')">Copy</button>
+                        </div>
+                    </div>
+                    <p>Explanation why it worked: This code creates a `Scanner` object that reads input from the standard input stream (`System.in`). It then prompts the user to enter their name and reads the input using `scanner.nextLine()`, storing it in the `name` variable. Finally, it prints a greeting message using the entered name.</p>
+                    
+                    <!--Printing output using System.out.println()-->
+                    <h2>Printing Output Using System.out.println()</h2>
+                    <p>Explanation: In Java, you can use the `System.out.println()` method to print output to the console. You can pass various types of data to this method, and it will print the data followed by a newline character.</p>
+                    <p>Example: </p>
+                    <div class="container">
+                        <div class="container">
+                            <div id="snippet29">
+                                <div id="snippetjava">
+                                    <pre>
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, world!");
+    }
+}
+                                    </pre>
+                                </div>
+                            </div>
+                            <button class="copy-button" onclick="copyToClipboard('snippet29')">Copy</button>
+                        </div>
+                    </div>
+                    <p>Explanation why it worked: This code uses `System.out.println()` to print "Hello, world!" to the console. The method automatically adds a newline character after the text, so the next output will appear on a new line.</p>
+                </div>
+            </div>
+        </section>
+        <div class="StartBtn-Support">
+            <a href="index.html" class="startBtn">Return <span style="font-weight: 700;">></span></a>
+        </div>
+    </main>
+    <footer id="about">
+        <div class="footer-container1">
+            <div class="footer-wrap">
+                <div class="footer-support-wrap">
+                    <!--Fix the hyperlink-->
+                    <div class="footer-box3">
+                        <div class="footer-container2">
+                            <h1>Reference</h1>
+                            <a href="https://www.example.com">W3schools</a>
+                            <a href="https://www.example.com">Codecademy</a>
+                            <a href="https://www.example.com">Orale</a>
+                        </div>
+                    </div>
+                    <div class="footer-box3">
+                        <div class="footer-container2">
+                            <h1>About</h1>
+                            <a href="https://www.example.com">School</a>
+                            <a href="https://www.example.com">Researchers</a>
+                            <a href="https://www.example.com">point</a>
+                        </div>
+                    </div>
+                    <div class="footer-box3">
+                        <div class="footer-container2">
+                            <h1>Contact</h1>
+                            <a href="https://www.example.com">Email</a>
+                            <p>Add: to-be inputted </p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>    

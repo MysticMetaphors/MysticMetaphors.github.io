@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeCraft</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://toppng.com/uploads/preview/decoding-aws-cognito-jwt-in-rails-11563986211fs4ia3uat8.png"
+                    alt="ACME"><!--change logo-->
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav1b"> Home</a>
+                <a href="#about" class="nav2b">About</a>
+                <a href="#contact" class="nav3b">Contact</a>
+                <button class="openbtn" onclick="openside()">☰</button>
+            </div>
+            <div class="sidebar" id="sidebar">
+                <!--Java Introdution-->
+                <button class="closebtn" onclick="closeside()">✕ Close</button>
+                <a href="javaIntro.html" class="active" onclick="togglePanel('panel1')">Java Introduction</a>
+                <!--Java Sntax-->
+                <a href="javaSyntax.html" onclick="togglePanel('panel2')">Java Syntax</a>
+                <!--Variables and Data types-->
+                <a href="variableData.html" onclick="togglePanel('panel3')">Variables and data types</a>
+                <!--Operators-->
+                <a href="operator.html" onclick="togglePanel('panel4')">Operators</a>
+                <!--ControlFlow-->
+                <a href="controlFlow.html" onclick="togglePanel('panel6')">ControlFlow</a>
+                <!--Arrays-->
+                <a href="array.html" onclick="togglePanel('panel7')">Arrays</a>
+                <!--Classes and Objects-->
+                <a href="classObj.html" onclick="togglePanel('panel9')">Classes and objects</a>
+                <!--Methods-->
+                <a href="method.html" onclick="togglePanel('panel8')">Methods</a>
+                <!--Input & Output-->
+                <a href="inputOutput.html" onclick="togglePanel('panel10')">Input & Output</a>
+                <!--polymorphysim-->
+                <a href="polymorphysim.html" onclick="togglePanel('panel11')">Polymorphysim</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!--Variables and data types-->
+        <section class="Variables" id="Variables">
+            <div class="container2">
+                <div class="Variables-wrap">
+                    <!--how to state variables-->
+                    <h1>Variables</h1>
+                    <p> Variables is a named storage location that holds a value. Variables are used to store data that
+                        can be used and manipulated by the program. Each variable has a data type(ex: int, string,
+                        boolean, etc...), which defines the
+                        type of data that can be stored in the variable.</p>
+                        <div class="container">
+                            <div id="snippet4">
+                                <pre>
+int variable = 20;
+                                </pre>
+                            </div>
+                            <button class="copy-button" onclick="copyToClipboard('snippet4')">Copy</button>
+                        </div>
+                    <p>In this example, your variable is the <span style="color: blue;">variable</span>. Variables can
+                        be
+                        changed. Variables can contain numbers. </p>
+                    <p><span class="font-weight-span">Note: </span>variables cannot have space example: <span
+                            style="color: green;">int </span><span style="color: lightblue;">example Var</span></p>
+                    <!--data types (Primative Data type(Non primatives))-->
+                    <h1>Data types</h1>
+                    <p>there are two different data types, these are.</p>
+                    <p>• Primative Data types(<span style="color: blue;">byte</span>, <span
+                            style="color: blue">short</span>, <span style="color: blue;">int</span>, <span
+                            style="color: blue;">long</span>, <span style="color: blue;">float</span>, <span
+                            style="color: blue;">double</span>, <span style="color: blue;">boolean</span>
+                        <span style="color: blue;">char</span>)
+                    </p>
+                    <p>• Non-primative Data types(class, arrays, String)</p>
+                    <div class="container">
+                        <div id="snippet5">
+                            <div id="snippetjava">
+                                <pre>
+<span class="comment">// byte data type</span>
+byte myByte = 12;
+                    
+<span class="comment">// short data type </span>
+short myShort = 32767;
+                    
+<span class="comment">// int data type </span>
+int myInt = 21;
+                    
+<span class="comment">// long data type </span>
+long myLong = 9223372036854775807L;
+                    
+<span class="comment">// float data type</span>
+myFloat = 3.14159f;
+                    
+<span class="comment">// double data type </span>
+double myDouble = 3.14;
+                    
+<span class="comment">// boolean data type </span>
+boolean myBoolean = true;
+                    
+<span class="comment">// char data type </span>
+char myChar = 'A';
+                    
+<span class="comment">// String data type </span>
+String myString = "Hello, World!";
+                                </pre>
+                            </div>
+                        </div>
+                        <button class="copy-button" onclick="copyToClipboard('snippet5')">Copy</button>
+                    </div>
+                    
+                    <!--Finish by friday!-->
+
+                    <h1>Data Types</h1><!--Task fill in info-->
+                    <table border="1"><!--fix in table form-->
+                        <tr>
+                            <th>Type</th>
+                            <th>Size</th>
+                            <th>Storage Campability</th>
+                        </tr>
+                        <tr>
+                            <td>byte</td>
+                            <td>1 byte</td>
+                            <td>Whole number:</td>
+                        </tr>
+                        <tr>
+                            <td>short</td>
+                            <td>2 byte</td>
+                            <td>Whole number:</td>
+                        </tr>
+                        <tr>
+                            <td>int</td>
+                            <td>4 byte</td>
+                            <td>Whole number:</td>
+                        </tr>
+                        <tr>
+                            <td>long</td>
+                            <td>8 byte</td>
+                            <td>Whole number:</td>
+                        </tr>
+                        <tr>
+                            <td>float</td>
+                            <td>4 byte</td>
+                            <td>Fractional Num:</td>
+                        </tr>
+                        <tr>
+                            <td>double</td>
+                            <td>8 byte</td>
+                            <td>Fractional Num:</td>
+                        </tr>
+                        <tr>
+                            <td>boolean</td>
+                            <td>1 bit</td>
+                            <td>Stores only two possible values: true and false</td>
+                        </tr>
+                        <tr>
+                            <td>char</td>
+                            <td>2 byte</td>
+                            <td>Store single charaters: A~Z and 0~9</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <div class="StartBtn-Support">
+            <a href="operator.html" class="startBtn">Next Lessons <span style="font-weight: 700;">></span></a>
+        </div>
+    </main>
+    <footer id="about">
+        <div class="footer-container1">
+            <div class="footer-wrap">
+                <div class="footer-support-wrap">
+                    <!--Fix the hyperlink-->
+                    <div class="footer-box3">
+                        <div class="footer-container2">
+                            <h1>Reference</h1>
+                            <a href="https://www.example.com">W3schools</a>
+                            <a href="https://www.example.com">Codecademy</a>
+                            <a href="https://www.example.com">Orale</a>
+                        </div>
+                    </div>
+                    <div class="footer-box3">
+                        <div class="footer-container2">
+                            <h1>About</h1>
+                            <a href="https://www.example.com">School</a>
+                            <a href="https://www.example.com">Researchers</a>
+                            <a href="https://www.example.com">point</a>
+                        </div>
+                    </div>
+                    <div class="footer-box3">
+                        <div class="footer-container2">
+                            <h1>Contact</h1>
+                            <a href="https://www.example.com">Email</a>
+                            <p>Add: to-be inputted </p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>    

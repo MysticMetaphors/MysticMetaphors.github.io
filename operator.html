@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeCraft</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://toppng.com/uploads/preview/decoding-aws-cognito-jwt-in-rails-11563986211fs4ia3uat8.png"
+                    alt="ACME"><!--change logo-->
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav1b"> Home</a>
+                <a href="#about" class="nav2b">About</a>
+                <a href="#contact" class="nav3b">Contact</a>
+                <button class="openbtn" onclick="openside()">☰</button>
+            </div>
+            <div class="sidebar" id="sidebar">
+                <!--Java Introdution-->
+                <button class="closebtn" onclick="closeside()">✕ Close</button>
+                <a href="javaIntro.html" class="active" onclick="togglePanel('panel1')">Java Introduction</a>
+                <!--Java Sntax-->
+                <a href="javaSyntax.html" onclick="togglePanel('panel2')">Java Syntax</a>
+                <!--Variables and Data types-->
+                <a href="variableData.html" onclick="togglePanel('panel3')">Variables and data types</a>
+                <!--Operators-->
+                <a href="operator.html" onclick="togglePanel('panel4')">Operators</a>
+                <!--ControlFlow-->
+                <a href="controlFlow.html" onclick="togglePanel('panel6')">ControlFlow</a>
+                <!--Arrays-->
+                <a href="array.html" onclick="togglePanel('panel7')">Arrays</a>
+                <!--Classes and Objects-->
+                <a href="classObj.html" onclick="togglePanel('panel9')">Classes and objects</a>
+                <!--Methods-->
+                <a href="method.html" onclick="togglePanel('panel8')">Methods</a>
+                <!--Input & Output-->
+                <a href="inputOutput.html" onclick="togglePanel('panel10')">Input & Output</a>
+                <!--polymorphysim-->
+                <a href="polymorphysim.html" onclick="togglePanel('panel11')">Polymorphysim</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!--Operators-->
+        <section class="Operators" id="Operators">
+            <div class="container2">
+                <div class="Operators-wrap">
+                    <!--Arithmetic-->
+                    <h1>Arithmetic Operators</h1>
+                    <p>theres 5 Arithmetic operators intotal these are (<span style="color: blue">+</span>,<span
+                            style="color: blue">-
+                        </span>,<span style="color: blue">* </span>,<span style="color: blue">/ </span>,<span
+                            style="color: blue;">,</span><span style="color: blue;">%</span>)</p>
+                    <!--ADDITION-->
+                    <h1>Addition</h1>
+                    <p> Addtion or '+' sign, concatinate or add numbers(Int, float, long, etc...)</p>
+                    <p> It concatinate Strings and chars(the Char are considered as numeric value</p>
+                    <p> and converted into Strings)</p>
+                    <h1>Numbers</h1>
+                    <div class="container">
+                        <div id="snippet7">
+                            <div id="snippetjava">
+                                <pre>
+int x = 10;
+int y = 20;
+int result = x + y;
+                                </pre>
+                            </div>
+                        </div>
+                        <button class="copy-button" onclick="copyToClipboard('snippet7')">Copy</button>
+                    </div>
+                    
+                    <h1>Output</h1>
+                    <div class="container">
+                        <div id="snippet7">
+                            <div id="snippetjava">
+                                30
+                            </div>
+                        </div>
+                    </div>
+                    <h1>String Concatination</h1>
+                    <div class="container">
+                        <div id="snippet8">
+                            <div id="snippetjava">
+                                <pre>
+int x = 10;
+int y = 20;
+int result = a + b
+                            </pre>
+                            </div>
+                        </div>
+                        <button class="copy-button" onclick="copyToClipboard('snippet8')">Copy</button>
+                    </div>
+                    <h1>Output</h1>
+                    <div class="container">
+                        <div id="snippet9">
+                            <div id="snippetjava">
+                                30
+                            </div>
+                        </div>
+                    </div>
+                    <h1>Char Concatination</h1>
+                    <div class="container">
+                        <div id="snippet8">
+                            <div id="snippetjava">
+                                <pre>
+char a = 'A';
+char b = 'B';
+String c = "" + a + b
+                                </pre>
+                            </div>
+                        </div>
+                        <button class="copy-button" onclick="copyToClipboard('snippet9')">Copy</button>
+                    </div>
+                    <h1>Output</h1>
+                    <div class="container">
+                        <div id="snippet9">
+                            <div id="snippetjava">
+                                <p>AB</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--SUBTRACTION-->
+                    <h1>Subtraction</h1>
+                    <p>The subtraction operator <span style="color: blue;">-</span> in Java is a binary arithmetic
+                        operator used to subtract the value of the</p>
+                    <p>second operand from the value of the first operand. It can be used with numeric data types such
+                        as</p>
+                    <p>int, float, double, long, etc. The result of the subtraction operation will be of the same data
+                        type</p>
+                    <p>as the operands, or it will be promoted to the larger data type if the operands have different
+                        data</p>
+                    <p>types.</p>
+                    <h1>Example</h1>
+                    <div class="container">
+                        <div id="snippet10">
+                            <div id="snippetjava">
+int x = 10;
+int y = 20;
+int result = a - b;
+                            </div>
+                        </div>
+                        <button class="copy-button" onclick="copyToClipboard('snippet10')">Copy</button>
+                    </div>
+                    <h1>Output</h1>
+                    <div class="container">
+                        <div id="snippet10">
+                            <div id="snippetjava">
+                                10
+                            </div>
+                        </div>
+                    </div>
+                    <!--MULTIPLICATION-->
+                    <h1>Multiplication</h1>
+                    <p>In Java, multiplication is a basic arithmetic operation used to calculate the product of two</p>
+                    <p>numbers. It is represented by the '*' operator. Multiplication can be performed on numeric data
+                    </p>
+                    <p>types such as int, double, float, long, short, and their respective wrapper classes. It cannot
+                    </p>
+                    <p>be directly applied to other types, such as String or custom classes, without any numerical
+                        value.</p>
+                    <h1>Example</h1>
+                    <div class="container">
+                        <div id="snippet11">
+                            <div id="snippetjava">
+                                <pre>
+int x = 5;
+int y = 20;
+int result = a * b
+                                </pre>
+                            </div>
+                        </div>
+                        <button class="copy-button" onclick="copyToClipboard('snippet11')">Copy</button>
+                    </div>
+                    <h1>Output</h1>
+                    <div class="container">
+                        <div id="snippet11">
+                            <div id="snippetjava">
+                                100
+                            </div>
+                        </div>
+                    </div>
+                    <!--DIVISION-->
+                    <h1>Division</h1>
+                    <p>In Java, division is another basic arithmetic operation used to calculate the quotient of two</p>
+                    <p>numbers. It is represented by the '/' operator. Division can be performed on numeric data types
+                    </p>
+                    <p>such as int, double, float, long, short, and their respective wrapper classes. However, division
+                    </p>
+                    <p>by zero is not allowed and will result in a runtime exception (ArithmeticException).</p>
+                    <h1>Example</h1>
+                    <div class="container">
+                        <div id="snippet12">
+                            <div id="snippetjava">
+                                <pre>
+int x = 100;
+int y = 20;
+int result = x / y;
+                                </pre>
+                            </div>
+                        </div>
+                        <button class="copy-button" onclick="copyToClipboard('snippet12')">Copy</button>
+                    </div>
+                    <h1>Output</h1>
+                    <div class="container">
+                        <div id="snippet12">
+                            <div id="snippetjava">
+                                5
+                            </div>
+                        </div>
+                    </div>
+                    <!--MODULO-->
+                    <h1>Modulo</h1>
+                    <p>In Java, the modulo operator (%) are similar to Divison operator nut it returns the remainder
+                    </p>
+                    <p>instead the quotient. It can be used with integer types (int, long, short, byte) and their </p>
+                    <p>corresponding wrapper classes. Similar to multiplication and division, the modulo operator </p>
+                    <p>cannot be directly applied to String or char types. If you need to perform modulo-like operations
+                    </p>
+                    <p>involving these types, you would need to convert them to numeric types first.</p>
+                    <h1>Example</h1>
+                    <div class="container">
+                        <div id="snippet13">
+                            <div id="snippetjava">
+                                <pre>
+int x = 20;
+int y = 3;
+int result = x % y;
+                                </pre>
+                            </div>
+                        </div>
+                        <button class="copy-button" onclick="copyToClipboard('snippet13')">Copy</button>
+                    </div>
+                    <h1>Output</h1>
+                    <div class="container">
+                        <div id="snippet13">
+                            <div id="snippetjava">
+                                2
+                            </div>
+                        </div>
+                    </div>
+                    <!--relational-->
+                    <h1>Relational Operators</h1>
+                    <p>In Java, relational operators are used to establish relationships between two values. They return
+                        a boolean value (true or false) based on whether the relationship holds.</p>
+                    <h1>Operators</h1>
+                    <table border="1">
+                        <tr>
+                            <th>Symbol</th>
+                            <th>Meaning</th>
+                            <th>Explanation</th>
+                        </tr>
+                        <tr>
+                            <td>==</td>
+                            <td>(equal to)</td>
+                            <td>Checks if two values are equal</td>
+                        </tr>
+                        <tr>
+                            <td>!=</td>
+                            <td>(not equal to)</td>
+                            <td> Checks if two values are not equal.</td>
+                        </tr>
+                        <tr>
+                            <td>></td>
+                            <td>(greater than)</td>
+                            <td>Checks if the left operand is greater than the right operand.</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                << /td>
+                            <td>(less than)</td>
+                            <td>Checks if the left operand is less than the right operand.</td>
+                        </tr>
+                        <tr>
+                            <td>>=</td>
+                            <td>(greater than or equal to)</td>
+                            <td>Checks if the left operand is greater than or equal to the right</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <=< /td>
+                            <td>(less than or equal to)</td>
+                            <td> Checks if the left operand is less than or equal to the right operand.</td>
+                        </tr>
+                    </table>
+                    <div style="padding-top: 10px;">
+                        <p>the relational operators can be used at Loops and Conditional expressions and these operators
+                        </p>
+                        <p>can also be used with numeric types (int, double, float, long, short, byte), char, and
+                            boolean. </p>
+                        <p>They cannot bedirectly applied to String or other non-numeric types.</p>
+                    </div>
+                    <!--example snippet here using while in this specific operators-->
+                    <div class="container">
+                        <div id="snippet14">
+                            <div id="snippetjava">
+                                <pre>
+int count = 0;
+int target = 5;
+while (count < target) {
+    System.out.println("Count is less than " + 
+    target + ". Count is currently: " + count);
+    count++; <span class="comment">// Increment count</span>
+}
+                                </pre>
+                            </div>
+                        </div>
+                        <button class="copy-button" onclick="copyToClipboard('snippet14')">Copy</button>
+                    </div>
+                </div>
+                <h1>Output</h1>
+                <div class="container">
+                    <div id="snippet14">
+                        <div id="snippetjava">
+                            <p>Count is less than 5. Count is currently: 0</p>
+                            <p>Count is less than 5. Count is currently: 1</p>
+                            <p>Count is less than 5. Count is currently: 2</p>
+                            <p>Count is less than 5. Count is currently: 3</p>
+                            <p>Count is less than 5. Count is currently: 4</p>
+                            <p>Loop finished. Count is now: 5</p>
+                        </div>
+                    </div>
+                </div>
+                <p>The loop continues due to relational Operator '<' by checking the "target" operand</p>
+                        <p>to "count" operand (will talk about the loops later)</p>
+                        <!--logical-->
+                        <h1>Logical Operators</h1>
+                        <p>Logical operations, also known as boolean operations, are operations that manipulate boolean
+                            values </p>
+                        <p>(true and false). These operations are typically used to make decisions based on conditions.
+                        </p>
+                        <p>In programming, logical operations are often used in conjunction with conditional statements
+                            and
+                        </p>
+                        <p>loops to control the flow of a program.</p>
+                        <h1>Operators</h1>
+                        <table border="1">
+                            <tr>
+                                <th>Symbol</td>
+                                <th>Meaning</td>
+                                <th>Explanation</td>
+                            </tr>
+                            <tr>
+                                <td>&&</td>
+                                <td>AND</td>
+                                <td>The result is true if and only if both operands are true. Otherwise, the result is
+                                    false.</td>
+                            </tr>
+                            <tr>
+                                <td>||</td>
+                                <td>OR</td>
+                                <td>The result is true if at least one of the operands is true. If both operands are
+                                    false,
+                                    the result is false.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>!</td>
+                                <td>NOT</td>
+                                <td>This is a unary operator that reverses the logical state of its operand. If the
+                                    operand
+                                    is true, the result is false, and vice versa.</td>
+                            </tr>
+                        </table>
+                        <div style="padding-top: 10px;">
+                            <p>These logical operations are fundamental in programming, especially for controlling the
+                                flow
+                                of a program </p>
+                            <p>based on certain conditions.</p>
+                        </div>
+                        <h1>Example</h1>
+                        <!--example snippet here using while in this specific operators-->
+                        <div class="container">
+                            <div id="snippet15">
+                                <div id="snippetjava">
+                                    <pre>
+int x = 5;
+int y = 3;
+int z = 7;
+
+if (x == y || x == z) {
+    System.out.println("x is equal to y OR 
+    equal to z");
+} else {
+    System.out.println("x is not equal to y AND 
+    not equal to z");</p>
+}
+                                    </pre>
+                                </div>
+                            </div>
+                            <button class="copy-button" onclick="copyToClipboard('snippet15')">Copy</button>
+                        </div>
+            </div>
+            <h1>Output</h1>
+            <div class="container">
+                <div id="snippet15">
+                    <div id="snippetjava">
+                        <p>x is not equal to y AND not equal to z</p>
+                    </div>
+                </div>
+            </div>
+            <p>The AND or '||' Operator check if the two pair of value are true. </p>
+            <p>Due to the variables not being equal '==' the else condition are triggered</p>
+            <!--assignment-->
+            <h1>Assignment Operators</h1>
+            <p>In Java, assignment operators are used to assign values to variables. They combine the</p>
+            <p>assignment operation with another operation, such as addition, subtraction,</p>
+            <p>multiplication, etc.</p>
+            <h1>Operators</h1>
+            <table border="1">
+                <tr>
+                    <th>Symbol</th>
+                    <th>Meaning</th>
+                    <th>Explanation</th>
+                    <th>Example</th>
+                </tr>
+                <tr>
+                    <td>=</td>
+                    <td>Simple Assignment</td>
+                    <td>Assigns the value of the right operand to the variable on the left.</td>
+                    <td>int x = 10;</td>
+                </tr>
+                <tr>
+                    <td>+=</td>
+                    <td>Addition Assignment</td>
+                    <td>Adds the value of the right operand to the variable on the left and assigns the result to the
+                        variable on the left.</td>
+                    <td>int x = 5; <!--change the comment to output-->
+                        x += 3; <span class="comment">// Equivalent to: x = x + 3;</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>-=</td>
+                    <td>Subtraction Assignment</td>
+                    <td>Subtracts the value of the right operand from the variable on the left and assigns the result to
+                        the variable on the left.</td>
+                    <td>int x = 10;
+                        x -= 4; // Equivalent to: x = x - 4;
+                    </td>
+                </tr>
+                <tr>
+                    <td>*=</td>
+                    <td>Multiplication Assignment</td>
+                    <td>Multiplies the variable on the left by the value of the right operand and assigns the result to
+                        the variable on the left.</td>
+                    <td>int x = 5;
+                        x *= 2; // Equivalent to: x = x * 2;
+                    </td>
+                </tr>
+                <tr>
+                    <td>/=</td>
+                    <td>Division Assignment</td>
+                    <td>Divides the variable on the left by the value of the right operand and assigns the result to the
+                        variable on the left.</td>
+                    <td>int x = 10;
+                        x /= 2; // Equivalent to: x = x / 2;
+                    </td>
+                </tr>
+                <tr>
+                    <td>%=</td>
+                    <td>Modulos Assignment</td>
+                    <td>Computes the remainder of dividing the variable on the left by the value of the right operand
+                        and assigns the result to the variable on the left.</td>
+                    <td>int x = 10;
+                        x %= 3; // Equivalent to: x = x % 3;
+                    </td>
+                </tr>
+            </table>
+
+            <!--Incremant/Decrement-->
+            <h1>Increment</h1>
+            <p>the increment operator (++) is used to increase the value of a variable by one. There are two types of increment operators:</p>
+            <p><span style="font-weight: 700;">Postfix Increment (variable++):</span> The variable is incremented after its current value is used in the expression.</p>
+            <div class="container">
+                <pre>
+int a = 5;
+int b = a++; // b gets the value 5, then a 
+is incremented to 6
+System.out.println("a: " + a); // Outputs 6
+System.out.println("b: " + b); // Outputs 5
+                </pre>
+            </div>
+            <p><span style="font-weight: 700;">Prefix Increment (++variable):</span> The variable is incremented before its current value is used in the expression.</p>
+            <div class="container">
+                <pre>
+int c = 5;
+int d = ++c; // c is incremented to 6, then d 
+gets the value 6
+System.out.println("c: " + c); // Outputs 6
+System.out.println("d: " + d); // Outputs 6                    
+                </pre>
+            </div>
+            <p>Increment ( <span style="color: blue;">1++</span> )</p>
+            <p>Example of using both Postfix and Prefix increment.</p>
+            <div class="container">
+                <div id="snippet16">
+                    <div id="snippetjava">
+                        <!--Change solution-->
+                        <pre style="font-size: 10px;">
+int x = 0;
+int y = 0;
+                    
+for (int i = 0; i < 3; i++) {
+    System.out.println("Loop iteration: " + i);
+    System.out.println("Before increment - x: " + x 
+    + ", y: " + y);
+                    
+int preIncrement = ++x; 
+int postIncrement = y++; 
+                    
+    System.out.println("After pre-increment - x: " + 
+    x + ", preIncrement: " + preIncrement);
+    System.out.println("After post-increment - y: " + 
+    y + ", postIncrement: " + postIncrement);
+    System.out.println("-----------------------------");
+}
+                        </pre>
+                    </div>
+                </div>
+                <button class="copy-button" onclick="copyToClipboard('snippet16')">Copy</button>
+            </div>
+            <h1>Output</h1>
+                <div class="container">
+                    <div id="snippet16">
+                        <div id="snippetjava">
+                            <pre>
+Initial value of a: 5
+After prefix increment (++a):
+Value of a: 6
+Value of prefixResult: 6
+
+Initial value of b: 5
+After postfix increment (b++):
+Value of b: 6
+Value of postfixResult: 5
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+            <!-- <h1>Decrement</h1>
+            <p>Dencrement ( <span style="color: blue;">1--</span> )</p>
+            <div class="container">
+                <div class="snippet17">
+                    <div class="snippetjava">
+                         <pre>
+
+                         </pre>
+                    </div>
+                </div>
+                    <button class="copy-button" onclick="copyToClipboard('snippet17')">Copy</button>
+                </div> -->
+        </section>
+        <div class="StartBtn-Support">
+            <a href="controlFlow.html" class="startBtn">Next Lessons <span style="font-weight: 700;">></span></a>
+        </div>
+    </main>
+    <footer id="about">
+        <div class="footer-container1">
+            <div class="footer-wrap">
+                <div class="footer-support-wrap">
+                    <!--Fix the hyperlink-->
+                    <div class="footer-box3">
+                        <div class="footer-container2">
+                            <h1>Reference</h1>
+                            <a href="https://www.example.com">W3schools</a>
+                            <a href="https://www.example.com">Codecademy</a>
+                            <a href="https://www.example.com">Orale</a>
+                        </div>
+                    </div>
+                    <div class="footer-box3">
+                        <div class="footer-container2">
+                            <h1>About</h1>
+                            <a href="https://www.example.com">School</a>
+                            <a href="https://www.example.com">Researchers</a>
+                            <a href="https://www.example.com">point</a>
+                        </div>
+                    </div>
+                    <div class="footer-box3">
+                        <div class="footer-container2">
+                            <h1>Contact</h1>
+                            <a href="https://www.example.com">Email</a>
+                            <p>Add: to-be inputted </p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>    
