@@ -177,7 +177,7 @@ nav {
     .nav-links a {
       margin-left: 0;
       margin-bottom: 0.5rem;
-      padding: 8px;
+      padding: 7px;
     }
   }
 
@@ -185,7 +185,7 @@ nav {
     .openbtn {
         margin-left: 0;
         margin-bottom: 0.5rem;
-        padding: 8px;
+        padding: 7px;
         }
   }
 .openbtn:hover {
