@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeCraft</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<!--Task change the id of each copy button same as the id of the div use the snippet5 as reference-->
+<!--Task arrage the position of the "Scanner" section-->
+<!--Task fix the snippets same as the snippet 1-->
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://toppng.com/uploads/preview/decoding-aws-cognito-jwt-in-rails-11563986211fs4ia3uat8.png"
+                    alt="ACME"><!--change logo-->
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav1b"> Home</a>
+                <a href="#about" class="nav2b">About</a>
+                <a href="#about" class="nav3b">Contact</a>
+                <button class="openbtn" onclick="openside()">☰</button>
+            </div>
+            <div class="sidebar" id="sidebar">
+                <!--Java Introdution-->
+                <button class="closebtn" onclick="closeside()">✕ Close</button>
+                <a href="javaIntro.html" class="active" onclick="togglePanel('panel1')">Java Introduction</a>
+                <!--Java Sntax-->
+                <a href="javaSyntax.html" onclick="togglePanel('panel2')">Java Syntax</a>
+                <!--Variables and Data types-->
+                <a href="variableData.html" onclick="togglePanel('panel3')">Variables and data types</a>
+                <!--Operators-->
+                <a href="operator.html" onclick="togglePanel('panel4')">Operators</a>
+                <!--ControlFlow-->
+                <a href="controlFlow.html" onclick="togglePanel('panel6')">ControlFlow</a>
+                <!--Arrays-->
+                <a href="array.html" onclick="togglePanel('panel7')">Arrays</a>
+                <!--Classes and Objects-->
+                
+                <!--Methods-->
+                <a href="method.html" onclick="togglePanel('panel8')">Methods</a>
+                <!--Input & Output-->
+                <a href="inputOutput.html" onclick="togglePanel('panel10')">Input & Output</a>
+                <!--polymorphysim-->
+                
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="quiz">
+            <h1>Quiz 1</h1>
+            <p><span style="font-weight: 700;">Directions: </span>Input your answers in the missing boxes to complete the program.</p>
+                    <div class="container">
+                        <p>Debug to complete the program.</p>
+                        <div id="">
+                            <div id="snippetjava">
+                                <pre>
+public class quiz1 <input type="text" id="question1" name="question1">
+    public static void main(String[] args) {
+        <span class="comment">// codes here</span>
+    }
+}                            </pre>
+                            </div>
+                        </div>
+                        <span class="feedback" id="feedback1"></span>
+                    </div>
+
+                    <h1>Quiz 2</h1>
+                            <div class="container">
+                                <p>What is the possible Output?</p>
+                                <div id="">
+                                    <div id="snippetjava">
+                                        <pre>
+public class quiz2 {
+    public static void main(String[] args) {
+        int x = 17;
+        int y = 12;
+        int res = 13 + x + y;
+
+        System.out.println(res);
+    }
+}                                       
+
+                                        </pre>
+                                    </div>
+                                <input type="text" id="question2" name="question2"><!--42-->
+                                </div>
+                                <span class="feedback" id="feedback2"></span>
+                            </div>
+                        
+                            <h1>Quiz 3</h1>
+                                    <div class="container">
+                                        <p>What is the possible Output?</p>
+                                        <div id="snippet8">
+                                            <div id="snippetjava">
+                                                <pre>
+public class quiz3 {
+    public static void main(String[] args) {
+        for (int i = 0; i < 3; i++) {
+            System.out.print(i + " ");
+        }             
+    }
+}                            </pre>
+                                            </div>
+                                            <input type="text" id="question3" name="question3"><!--0 1 2-->
+                                        </div>
+                                        <span class="feedback" id="feedback3"></span>
+                                    </div>
+
+                                    <h1>Quiz 4</h1>
+                                    <div class="container">
+                                        <p>What is the possible Output?</p>
+                                        <div id="">
+                                            <div id="snippetjava">
+                                                <pre class="preSnippet">
+public class quiz3 {
+    public static void main(String[] args) {
+        int[] numbers = {1, 2, 3, 4, 5};
+        int sum = 0;
+
+        for (int i = 0; i < numbers.length; i++) {
+        sum += numbers[i];
+        }
+        System.out.println(sum);                
+    }
+}                            </pre>
+                                            </div>
+                                            <input type="text" id="question4" name="question4"><!--15-->
+                                        </div>
+                                        <span class="feedback" id="feedback4"></span>
+                                    </div>
+
+                                    <h1>Quiz 5</h1>
+                                    <div class="container">
+                                        <p>What is the possible Output? choose a correct answer below.</p>
+                                        <p>A. x is equal to y AND a is not equal to b</p>
+                                        <p>B. x are greater than y AND a is equal to b</p>
+                                        <p>C. Numbers are equal</p>
+                                        <div id="">
+                                            <div id="snippetjava">
+                                                <pre class="preSnippet1">
+
+public class Main {
+    public static void main(String[] args) {
+        int x = 20;
+        int y = 4;
+
+        double a = 12.3;
+        double b = 12.3;
+                                                    
+        if (x == y && a != b) {
+            System.out.println( "x is equal to y");
+            System.out.println( "a is not equal to b");
+        } else if (x > y && a == b) {
+            System.out.println( "x are greater than y");
+            System.out.println("a is equal to b");
+        } else {
+            System.out.println("Numbers are equal");
+        }
+    }
+}
+                                                    </pre>
+                                            </div>
+                                            <input type="text" id="question5" name="question5"><!--b-->
+                                        </div>
+                                        <span class="feedback" id="feedback5"></span>
+                                    </div>
+                                    <div class="submit-con">
+                                        <button type="button" onclick="checkAnswers()">Submit</button>
+                                    </div> 
+        </section>
+    </main>
+    <footer id="about">
+        <div class="footer-container1">
+            <div class="footer-wrap">
+                <div class="footer-support-wrap">
+                    <!--Fix the hyperlink-->
+                    <div class="footer-box3">
+                        <div class="footer-container2">
+                            <h1>Reference</h1>
+                            <a href="https://www.example.com">W3schools</a>
+                            <a href="https://www.example.com">Codecademy</a>
+                            <a href="https://www.example.com">Orale</a>
+                        </div>
+                    </div>
+                    <div class="footer-box3">
+                        <div class="footer-container2">
+                            <h1>About</h1>
+                            <a href="https://www.google.com/search?gs_ssp=eJzj4tZP1zcsSY43MzPMNmC0UjWoMDa2NE82SExNSrIwsUg1SbEyqLBIMTAyNjI1TUo1sUxLTU7y4i1OTixWSMwrySzIz8kHAHohFBA&q=scas+antipolo&rlz=1C1KNTJ_enPH1077PH1077&oq=SCAS&gs_lcrp=EgZjaHJvbWUqEAgBEC4YrwEYxwEYgAQYjgUyDQgAEAAYgwEYsQMYgAQyEAgBEC4YrwEYxwEYgAQYjgUyEggCEAAYChiDARixAxiABBiKBTIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCjU4ODQwajBqMTWoAgiwAgE&sourceid=chrome&ie=UTF-8">School</a>
+                            <a href="https://www.example.com">Researchers</a>
+                        </div>
+                    </div>
+                    <div class="footer-box3">
+                        <div class="footer-container2">
+                            <h1>Contact</h1>
+                            <a href="codecraftv13@gmail.com">Email: codecraftv13@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

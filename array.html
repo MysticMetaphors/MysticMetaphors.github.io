@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeCraft</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://toppng.com/uploads/preview/decoding-aws-cognito-jwt-in-rails-11563986211fs4ia3uat8.png"
+                    alt="ACME"><!--change logo-->
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav1b"> Home</a>
+                <a href="#about" class="nav2b">About</a>
+                <a href="#about" class="nav3b">Contact</a>
+                <button class="openbtn" onclick="openside()">☰</button>
+            </div>
+            <div class="sidebar" id="sidebar">
+                <!--Java Introdution-->
+                <button class="closebtn" onclick="closeside()">✕ Close</button>
+                <a href="javaIntro.html" class="active" onclick="togglePanel('panel1')">Java Introduction</a>
+                <!--Java Sntax-->
+                <a href="javaSyntax.html" onclick="togglePanel('panel2')">Java Syntax</a>
+                <!--Variables and Data types-->
+                <a href="variableData.html" onclick="togglePanel('panel3')">Variables and data types</a>
+                <!--Operators-->
+                <a href="operator.html" onclick="togglePanel('panel4')">Operators</a>
+                <!--ControlFlow-->
+                <a href="controlFlow.html" onclick="togglePanel('panel6')">ControlFlow</a>
+                <!--Arrays-->
+                <a href="array.html" onclick="togglePanel('panel7')">Arrays</a>
+                <!--Classes and Objects-->
+                
+                <!--Methods-->
+                <a href="method.html" onclick="togglePanel('panel8')">Methods</a>
+                <!--Input & Output-->
+                <a href="inputOutput.html" onclick="togglePanel('panel10')">Input & Output</a>
+                <!--polymorphysim-->
+                <a href="quiz.html" onclick="togglePanel('panel11')">Quiz</a>
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+         <!--Arrays-->
+         <section class="Arrays" id="Arrays">
+            <div class="container2">
+                <div class="Arrays-wrap">
+                    <h1>Arrays</h1>
+                    <!--Declaring and initializing arrays-->
+                    <h2>Declaring and Initializing Arrays</h2>
+                    <p><span style="font-weight: 700;">Explanation:</span> Arrays in Java are used to store multiple values of the same type. To declare and initialize
+                        an array, you specify the type of elements followed by square brackets [] and the array name.</p>
+                    <p><span style="font-weight: 700;">Example:</span> int[] numbers = {1, 2, 3, 4, 5};</p>
+                    <p><span style="font-weight: 700;">Explanation:</span> This line of code declares an integer array named "numbers" and initializes it
+                        with five elements.</p>
+        
+                    <!--Accessing array elements-->
+                    <h2>Accessing Array Elements</h2>
+                    <p><span style="font-weight: 700;">Explanation:</span> You can access elements of an array by using the index of the element. The index starts from
+                        0 for the first element.</p>
+                    <p><span style="font-weight: 700;">Example:</span> int thirdElement = numbers[2];</p>
+                    <p><span style="font-weight: 700;">Explanation:</span> This line of code accesses the third element of the "numbers" array (which has
+                        an index of 2) and assigns it to the variable "thirdElement".</p>
+        
+                    <!--Multidimensional arrays-->
+                    <h2>Multidimensional Arrays</h2>
+                    <p><span style="font-weight: 700;">Explanation:</span> Java supports multidimensional arrays, which are arrays of arrays. You can declare a
+                        multidimensional array by adding multiple pairs of square brackets [] after the element type.</p>
+                    <p><span style="font-weight: 700;">Example:</span> int[][] matrix = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};</p>
+                    <p><span style="font-weight: 700;">Explanation:</span> This line of code declares and initializes a 2D array named "matrix" with
+                        three rows and three columns.</p>
+                </div>
+            </div>
+        </section>
+        <div class="StartBtn-Support">
+            <a href="method.html" class="startBtn">Next Lessons <span style="font-weight: 700;">></span></a>
+        </div>
+    </main>
+    <footer id="about">
+        <div class="footer-container1">
+            <div class="footer-wrap">
+                <div class="footer-support-wrap">
+                    <!--Fix the hyperlink-->
+                    <div class="footer-box3">
+                        <div class="footer-container2">
+                            <h1>Reference</h1>
+                            <a href="https://www.example.com">W3schools</a>
+                            <a href="https://www.example.com">Codecademy</a>
+                            <a href="https://www.example.com">Orale</a>
+                        </div>
+                    </div>
+                    <div class="footer-box3">
+                        <div class="footer-container2">
+                            <h1>About</h1>
+                            <a href="https://www.google.com/search?gs_ssp=eJzj4tZP1zcsSY43MzPMNmC0UjWoMDa2NE82SExNSrIwsUg1SbEyqLBIMTAyNjI1TUo1sUxLTU7y4i1OTixWSMwrySzIz8kHAHohFBA&q=scas+antipolo&rlz=1C1KNTJ_enPH1077PH1077&oq=SCAS&gs_lcrp=EgZjaHJvbWUqEAgBEC4YrwEYxwEYgAQYjgUyDQgAEAAYgwEYsQMYgAQyEAgBEC4YrwEYxwEYgAQYjgUyEggCEAAYChiDARixAxiABBiKBTIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCjU4ODQwajBqMTWoAgiwAgE&sourceid=chrome&ie=UTF-8">School</a>
+                            <a href="https://www.example.com">Researchers</a>
+                        </div>
+                    </div>
+                    <div class="footer-box3">
+                        <div class="footer-container2">
+                            <h1>Contact</h1>
+                            <a href="codecraftv13@gmail.com">Email: codecraftv13@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>    

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeCraft</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://toppng.com/uploads/preview/decoding-aws-cognito-jwt-in-rails-11563986211fs4ia3uat8.png"
+                    alt="ACME"><!--change logo-->
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav1b"> Home</a>
+                <a href="#about" class="nav2b">About</a>
+                <a href="#about" class="nav3b">Contact</a>
+                <button class="openbtn" onclick="openside()">☰</button>
+            </div>
+            <div class="sidebar" id="sidebar">
+                <!--Java Introdution-->
+                <button class="closebtn" onclick="closeside()">✕ Close</button>
+                <a href="javaIntro.html" class="active" onclick="togglePanel('panel1')">Java Introduction</a>
+                <!--Java Sntax-->
+                <a href="javaSyntax.html" onclick="togglePanel('panel2')">Java Syntax</a>
+                <!--Variables and Data types-->
+                <a href="variableData.html" onclick="togglePanel('panel3')">Variables and data types</a>
+                <!--Operators-->
+                <a href="operator.html" onclick="togglePanel('panel4')">Operators</a>
+                <!--ControlFlow-->
+                <a href="controlFlow.html" onclick="togglePanel('panel6')">ControlFlow</a>
+                <!--Arrays-->
+                <a href="array.html" onclick="togglePanel('panel7')">Arrays</a>
+                <!--Classes and Objects-->
+                
+                <!--Methods-->
+                <a href="method.html" onclick="togglePanel('panel8')">Methods</a>
+                <!--Input & Output-->
+                <a href="inputOutput.html" onclick="togglePanel('panel10')">Input & Output</a>
+                <!--polymorphysim-->
+                <a href="quiz.html" onclick="togglePanel('panel11')">Quiz</a>
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!--Control flow satements-->
+        <section class="Controlflow" id="Controlflow">
+            <div class="container2">
+                <div class="Controlflow-wrap">
+                    <h1>Controlflow Statements</h1>
+                    <p>Control flow statements in programming determine the order in which statements are executed</p>
+                    <p>in a program. They control the flow of execution based on certain conditions, loops, and
+                        branching.</p>
+                    <p>here in Controlflow where you can use the Operators stated before. </p>
+
+                    <div class="container">
+                        <h1>Example</h1>
+                        <div id="snippet18">
+                            <div id="snippetjava">
+                                <pre>
+int x = 10;
+int y = 20;
+    if (x < y) {
+        System.out.println("the 'x' are less than 'y' ")
+    } else {
+        System.out.println("the 'x' are greater than 'y'")
+    }
+                                </pre>
+                            </div>
+                        </div>
+                        <button class="copy-button" onclick="copyToClipboard('snippet18')">Copy</button>
+                    </div>
+                </div>
+                <p>In this example we had used the '==' operator to check if 'x' is equal to 'y'</p>
+                <h1>Output</h1>
+                <div class="container">
+                    <div id="snippet18">
+                        <div id="snippetjava">
+                            <p>the 'x' are less than 'y'</p>
+                            <p><span class="comment">//the statement are true or so put it</span></p>
+                            <p><span class="comment">//'x' is less than 'y'</span></p>
+                        </div>
+                    </div>
+                </div>
+                <!--Conditional statements (if, else, else if)-->
+                <h1>Conditional Statement</h1>
+                <p>Conditional statements in Java include if, else if, and if-else. These statements are used to execute
+                </p>
+                <p>different blocks of code based on the evaluation of one or more conditions.</p>
+                <div class="container">
+                    <h1>if-else statement</h1>
+                    <div id="snippet19">
+                        <div id="snippetjava">
+                            <p>int x = 10;</p>
+                            <p>if (x > 5) {</p>
+                            <p>System.out.println("x is greater than 5");</p>
+                            <p>} else {</p>
+                            <p>System.out.println("x is less thn 5");</p>
+                            <p>}</p>
+                        </div>
+                    </div>
+                    <button class="copy-button" onclick="copyToClipboard('snippet19')">Copy</button>
+                </div>
+            </div>
+            <h1>Output</h1>
+            <div class="container">
+                <div id="snippet19">
+                    <div id="snippetjava">
+                        <p>x is greater than 5</p>
+                    </div>
+                </div>
+            </div>
+            <p>The if-else statement are if condition followed by else. The if-statement works</p>
+            <p>when the 'if' statement are true the code inside the if statement will be triggered.</p>
+            <p>and if the condition are false the else statement will be triggered.</p>
+            <p>The if condition have been triggered due to 'x' is greater than 5</p>
+            <p>and resulted the if condition to be executed.</p>
+            <div class="container">
+                <h1>if-else statement</h1>
+                <div id="snippet20">
+                    <div id="snippetjava">
+                        <p>int x = 10;</p>
+                        <p>if (x > 5) {</p>
+                        <p>System.out.println("x is greater than 5");</p>
+                        <p>} else {</p>
+                        <p>System.out.println("x is less thn 5");</p>
+                        <p>}</p>
+                    </div>
+                </div>
+                <button class="copy-button" onclick="copyToClipboard('snippet20')">Copy</button>
+            </div>
+            </div>
+            <h1>Output</h1>
+            <div class="container">
+                <div id="snippet20">
+                    <div id="snippetjava">
+                        <p>x is greater than 5</p>
+                    </div>
+                </div>
+            </div>
+            <h1>Else-if Statement</h1>
+            <p>Else-if statement are similar to if-else, the difference between the</p>
+            <p>two, the else-if statement have multiple conditions.</p>
+            <div class="container">
+                <h1>else-if Statement</h1>
+                <div id="snippet21">
+                    <div id="snippetjava">
+                        <p>int x = 20;</p>
+                        <p>if (x < 10) {</p>
+                        <p>System.out.println("x is less than 10");</p>
+                        <p>} else if (x < 20) {</p>
+                        <p>System.out.println("x is less than 20 but not less than 10");</p>
+                        <p>} else {</p>
+                        <p>System.out.println("x is 20 or more");</p>
+                        <p>}</p>
+                    </div>
+                </div>
+                <button class="copy-button" onclick="copyToClipboard('snippet21')">Copy</button>
+            </div>
+            </div>
+            <h1>Output</h1>
+            <div class="container">
+                <div id="snippet21">
+                    <div id="snippetjava">
+                        <p>x is 20 or more</p>
+                    </div>
+                </div>
+            </div>
+            <p>The else-if check multiple conditons and the statement continues</p>
+            <p>until condition have been meet, if all conditions aren't meet the last</p>
+            <p>"else" will be triggered in diffult</p>
+            <!--Loops (for, while, do-while)-->
+            <h1>While Loops</h1>
+            <p>the while statement is used to repeatedly execute a block of code as long as a</p>
+            <p>specified condition is true</p>
+            <div class="container">
+                <h1>While statement</h1>
+                <div id="snippet22">
+                    <div id="snippetjava">
+                        <p>int x = 0;</p>
+                        <p>while (x < 5) {</p>
+                        <p>System.out.println("Count is: " + count);</p>
+                        <p>count++;</p>
+                        <p>}</p>
+                        <p>System.out.println("Loop finished");</p>
+                    </div>
+                </div>
+                <button class="copy-button" onclick="copyToClipboard('snippet22')">Copy</button>
+            </div>
+            <h1>Output</h1>
+            <div class="container">
+                <div id="snippet22">
+                    <div id="snippetjava">
+                        <p>Count is: 1</p>
+                        <p>Count is: 2</p>
+                        <p>Count is: 3</p>
+                        <p>Count is: 4</p>
+                        <p>Count is: 5</p>
+                        <p>Loop finished</p>
+                    </div>
+                </div>
+            </div>
+            <p></p>
+            <p>the block of code inside the while statement had been triggered 5 times</p>
+            <p>due to the 'x' have 0 value which the condition require the 'x' to be 5</p>
+            <p>this result the while to run multiple times.</p>
+            <!--For statement-->
+            <h1>For Statement</h1>
+            <p>the for statement is used to repeatedly execute a block of code a fixed number 
+            of times. It's one of the most commonly used loop structures and provides a compact 
+            way to iterate over a range of values or elements in an array.</p>
+
+            <h1>While statement</h1>
+            <div class="container" style="padding-bottom: 20px;">
+                <div>
+                    <div id="snippetjava">
+                        <p>for (initialization; condition; update) {</p>
+                        <p>// Code to be executed</p>
+                        <p>}</p>
+                    </div>
+                </div>
+            </div>
+            <h1>3 Parts of for statement</h1>
+            <h2 style="font-style: oblique;">initialization:</h2>
+            <p>expression is executed once at the beginning of the loop. It typically initializes </p>
+            <p>a loop control variable. Which means the Loop start at specific numeric number stated</p>
+            <p>for Example: int i = 0 then the loop start at 0.</p>
+            <h2 style="font-style: oblique;">condition:</h2>
+            <p>condition is evaluated before each iteration. If it evaluates to true, the code </p>
+            <p>inside the loop is executed. If it evaluates to false, the loop terminates.</p>
+            <p>which means the the condition are the part that decide how many times the code</p>
+            <p>will be repeated</p>
+            <h2 style="font-style: oblique;">update:</h2>
+            <p>update expression is executed after each iteration of the loop. It typically increments</p>
+            <p> or updates the loop control variable. Which means how much of amount the loop will be updated</p>
+            
+            <div class="container">
+                <h1>Example</h1>
+                <div id="snippet23">
+                    <div id="snippetjava">
+                        <p>for (int i = 0; i < 5; i++) {</p>
+                            <p>System.out.println("Iteration: " + i);</p>
+                            <p>}</p> 
+                    </div>
+                </div>
+                <button class="copy-button" onclick="copyToClipboard('snippet23')">Copy</button>
+            </div>
+            <h1>Output</h1>
+            <div class="container">
+                <div id="snippet23">
+                    <div id="snippetjava">
+                        <p>Iteration: 0</p>
+                        <p>Iteration: 1</p>
+                        <p>Iteration: 2</p>
+                        <p>Iteration: 3</p>
+                        <p>Iteration: 4</p>     
+                    </div>
+                </div>
+            </div>
+
+            <!--Switch statement-->
+                <h1>Switch statement</h1>
+                <p>switch statement are similar to else-if statement. Switch is used to execute different</p>
+                <p>blocks of code based on the value of an expression you have. It can be an alternative</p>
+                <p>to using multiple if-else statements when you have a single expression that you want to</p>
+                <p>compare against multiple possible values.</p>
+                <h1>Example</h1>
+                <div class="container">
+                    <h1>While statement</h1>
+                    <div id="snippet24">
+                        <div id="snippetjava">
+int number = 3;
+String numberName;
+    switch (number) {
+        case 1:
+            numberName = "One";
+        break;
+        case 2:
+            numberName = "Two";
+        break;
+        case 3:
+            numberName = "Three";
+        break;
+        case 4:
+            numberName = "Four";
+         break;
+    default:
+        numberName = "Invalid number";
+    }
+System.out.println(numberName);
+                        </div>
+                    </div>
+                    <button class="copy-button" onclick="copyToClipboard('snippet24')">Copy</button>
+                </div>
+                <h1>Output</h1>
+                <div class="container">
+                    <div id="snippet24">
+                        <div id="snippetjava">
+                            Three
+                        </div>
+                    </div>
+                </div>
+            <p>The Switch outputted the case 3 due to the int number have the value</p>
+            <p>of 3.</p>
+            <!--Break and continue statements-->
+            <h1>Break & Continue statement</h1>
+            <h1><span style="font-style: oblique;">Break statement</span></h1>
+            <p>• When a break statement is encountered inside a loop or switch statement, the control</p>
+            <p>immediately exits the loop or switch statement.</p>
+            <p>• If the break statement is inside a nested loop, it only exits the innermost loop.</p>
+            <h1><span style="font-style: oblique;">Continue Statement</span></h1>
+            <p>• When a continue statement is encountered inside a loop, the control immediately jumps to </p>
+            <p>the next iteration of the loop.</p>
+            <p>• It skips the remaining code inside the loop for the current iteration and proceeds with the next iteration.</p>
+        </section>
+        <!--end sec-->
+        <div class="StartBtn-Support">
+            <a href="array.html" class="startBtn">Next Lessons <span style="font-weight: 700;">></span></a>
+        </div>
+       
+    </main>
+    <footer id="about">
+        <div class="footer-container1">
+            <div class="footer-wrap">
+                <div class="footer-support-wrap">
+                    <!--Fix the hyperlink-->
+                    <div class="footer-box3">
+                        <div class="footer-container2">
+                            <h1>Reference</h1>
+                            <a href="https://www.example.com">W3schools</a>
+                            <a href="https://www.example.com">Codecademy</a>
+                            <a href="https://www.example.com">Orale</a>
+                        </div>
+                    </div>
+                    <div class="footer-box3">
+                        <div class="footer-container2">
+                            <h1>About</h1>
+                            <a href="https://www.google.com/search?gs_ssp=eJzj4tZP1zcsSY43MzPMNmC0UjWoMDa2NE82SExNSrIwsUg1SbEyqLBIMTAyNjI1TUo1sUxLTU7y4i1OTixWSMwrySzIz8kHAHohFBA&q=scas+antipolo&rlz=1C1KNTJ_enPH1077PH1077&oq=SCAS&gs_lcrp=EgZjaHJvbWUqEAgBEC4YrwEYxwEYgAQYjgUyDQgAEAAYgwEYsQMYgAQyEAgBEC4YrwEYxwEYgAQYjgUyEggCEAAYChiDARixAxiABBiKBTIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCjU4ODQwajBqMTWoAgiwAgE&sourceid=chrome&ie=UTF-8">School</a>
+                            <a href="https://www.example.com">Researchers</a>
+                        </div>
+                    </div>
+                    <div class="footer-box3">
+                        <div class="footer-container2">
+                            <h1>Contact</h1>
+                            <a href="codecraftv13@gmail.com">Email: codecraftv13@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>    

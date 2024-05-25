@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeCraft</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://toppng.com/uploads/preview/decoding-aws-cognito-jwt-in-rails-11563986211fs4ia3uat8.png"
+                    alt="ACME"><!--change logo-->
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav1b"> Home</a>
+                <a href="#about" class="nav2b">About</a>
+                <a href="#about" class="nav3b">Contact</a>
+                <button class="openbtn" onclick="openside()">☰</button>
+            </div>
+            <div class="sidebar" id="sidebar">
+                <!--Java Introdution-->
+                <button class="closebtn" onclick="closeside()">✕ Close</button>
+                <a href="javaIntro.html" class="active" onclick="togglePanel('panel1')">Java Introduction</a>
+                <!--Java Sntax-->
+                <a href="javaSyntax.html" onclick="togglePanel('panel2')">Java Syntax</a>
+                <!--Variables and Data types-->
+                <a href="variableData.html" onclick="togglePanel('panel3')">Variables and data types</a>
+                <!--Operators-->
+                <a href="operator.html" onclick="togglePanel('panel4')">Operators</a>
+                <!--ControlFlow-->
+                <a href="controlFlow.html" onclick="togglePanel('panel6')">ControlFlow</a>
+                <!--Arrays-->
+                <a href="array.html" onclick="togglePanel('panel7')">Arrays</a>
+                <!--Classes and Objects-->
+                
+                <!--Methods-->
+                <a href="method.html" onclick="togglePanel('panel8')">Methods</a>
+                <!--Input & Output-->
+                <a href="inputOutput.html" onclick="togglePanel('panel10')">Input & Output</a>
+                <!--polymorphysim-->
+                <a href="quiz.html" onclick="togglePanel('panel11')">Quiz</a>
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        
+        <!--Java syntax-->
+        <section class="javaSyntax" id="javaSyntax">
+            <div class="container2">
+                <div class="javaSyntax-wrap">
+                    <!--java struture program-->
+                    <h1 href="#Java"> Java Syntax</h1>
+                    <!--Hello world code-->
+                    <div class="container">
+                        <h1>Example code</h1>
+                        <div id="snippet1">
+                            <pre><code>
+public class may {
+    public static void main(String[] args) {
+        //codes inside the method
+    }
+}            
+                           </code></pre>
+                        </div>
+                        <button class="copy-button" onclick="copyToClipboard('snippet1')">Copy</button>
+                    </div>
+                    
+                    <!--Explain inside the snippet-->
+                    <div>
+                        <h1>Explanation:</h1>
+                        <p>in the example above we have a Java class which is <Span
+                                style="Color: red">exampleClass</Span></p>
+                        <p><span class="font-weight-span">Note:</span> The class must be the same as file name. for
+                            example: file name is <span style="color: blue;">exampleClass.java</span> your class name
+                            will be <span style="color: red;">exampleClass</span>.</p>
+                    </div>
+
+                    <div>
+                        <h1>Method</h1> <!--dont forget to change the color of each letter -->
+                        <p>within this method are where codes will be executed otherwise not</p>
+                        <div class="container">
+                            <h1>Example code</h1>
+                            <div id="snippet2">
+                                <pre><code>
+public static void main(String[] args) {
+    // Your code here
+}
+                            </code></pre>
+                            </div>
+                            <button class="copy-button" onclick="copyToClipboard('snippet2')">Copy</button>
+                        </div>
+                    <!--commenting-->
+                    <div>
+                        <h1>Commenting</h1>
+                        <p>To comment, we simply use the <span class="comment">//</span> and <span class="comment">/* */</span>.</p>
+                        <p>The <span class="comment">//</span> is used for single lines.</p>
+                        <p>The <span class="comment">/* */</span> is used for multiple lines. For instance:</p>
+                        <div class="container">
+                            <h1>Example code</h1>
+                            <div id="snippet3">
+                                <pre>
+<span class="comment">// This is a single line comment</span>
+<span class="comment">/*This is a multiple line comment*/</span> 
+                                </pre>
+                            </div>
+                            <button class="copy-button" onclick="copyToClipboard('snippet3')">Copy</button>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </section>
+        <div class="StartBtn-Support">
+            <a href="variableData.html" class="startBtn">Next Lessons <span style="font-weight: 700;">></span></a>
+        </div>
+    </main>
+    <footer id="about">
+        <div class="footer-container1">
+            <div class="footer-wrap">
+                <div class="footer-support-wrap">
+                    <!--Fix the hyperlink-->
+                    <div class="footer-box3">
+                        <div class="footer-container2">
+                            <h1>Reference</h1>
+                            <a href="https://www.example.com">W3schools</a>
+                            <a href="https://www.example.com">Codecademy</a>
+                            <a href="https://www.example.com">Orale</a>
+                        </div>
+                    </div>
+                    <div class="footer-box3">
+                        <div class="footer-container2">
+                            <h1>About</h1>
+                            <a href="https://www.google.com/search?gs_ssp=eJzj4tZP1zcsSY43MzPMNmC0UjWoMDa2NE82SExNSrIwsUg1SbEyqLBIMTAyNjI1TUo1sUxLTU7y4i1OTixWSMwrySzIz8kHAHohFBA&q=scas+antipolo&rlz=1C1KNTJ_enPH1077PH1077&oq=SCAS&gs_lcrp=EgZjaHJvbWUqEAgBEC4YrwEYxwEYgAQYjgUyDQgAEAAYgwEYsQMYgAQyEAgBEC4YrwEYxwEYgAQYjgUyEggCEAAYChiDARixAxiABBiKBTIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCjU4ODQwajBqMTWoAgiwAgE&sourceid=chrome&ie=UTF-8">School</a>
+                            <a href="https://www.example.com">Researchers</a>
+                        </div>
+                    </div>
+                    <div class="footer-box3">
+                        <div class="footer-container2">
+                            <h1>Contact</h1>
+                            <a href="codecraftv13@gmail.com">Email: codecraftv13@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>    
